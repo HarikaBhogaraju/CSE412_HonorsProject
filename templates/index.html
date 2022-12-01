@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %}Mental Health Statistics{% endblock %}</h1>
+
+    <table style="border: 1px solid black;">
+      <tr style="border: 1px solid black;">
+        <td style="border: 1px solid black;">In general</td>
+        <td style="border: 1px solid black;">
+          <p><a href="/depression">Depression Statistics</a></p>
+        </td>
+        <td style="border: 1px solid black;">
+          <p><a href="/anxiety">Anxiety Statistics</a></p>
+        </td>
+      </tr>
+      <tr style="border: 1px solid black;">
+        <td style="border: 1px solid black;">By gender</td>
+        <td style="border: 1px solid black;">
+          <p><a href="/depression_gender">Depression Statistics</a></p>
+        </td>
+        <td style="border: 1px solid black;">
+          <p><a href="/anxiety_gender">Anxiety Statistics</a></p>
+        </td>
+      </tr>
+      <tr style="border: 1px solid black;">
+        <td style="border: 1px solid black;">By marital status</td>
+        <td style="border: 1px solid black;">
+          <p><a href="/depression_status">Depression Statistics</a></p>
+        </td>
+        <td style="border: 1px solid black;">
+          <p><a href="/anxiety_status">Anxiety Statistics</a></p>
+        </td>
+      </tr>
+    </table>
+
+{% endblock %}
